@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:team-griffin/eslint-config.git",
   "author": "Joshua Thornton <joshua.thornton@heg.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "eslint-plugin-fp": "^2.3.0"
+  }
 }

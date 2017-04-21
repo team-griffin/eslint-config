@@ -1,27 +1,6 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es6': true,
-  },
   'extends': [
     'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:flowtype/recommended',
-  ],
-  'installedESLint': true,
-  'parserOptions': {
-    'ecmaFeatures': {
-      'experimentalObjectRestSpread': true,
-      'jsx': true,
-    },
-    'sourceType': 'module',
-  },
-  'plugins': [
-    'react',
-    'flowtype',
-    'fp',
-    'import',
-    'jsx-a11y',
   ],
   'rules': {
     // Start JS
@@ -110,12 +89,12 @@ module.exports = {
     'func-call-spacing': ['error', 'never'],
     'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': [
-    'error',
-    {
-      'beforeColon': false,
-      'afterColon': true,
-      'mode': 'strict'
-    }
+      'error',
+      {
+        'beforeColon': false,
+        'afterColon': true,
+        'mode': 'strict'
+      }
     ],
     'keyword-spacing': ['error', { 'before': true }],
     'linebreak-style': ['error', 'unix'],
@@ -165,112 +144,5 @@ module.exports = {
     'symbol-description': 'error',
     'template-curly-spacing': 'error',
     // End JS
-
-    // Start React
-    'react/prop-types': ['error', { 'skipUndeclared': true }],
-    'react/no-children-prop': 'error',
-    'react/no-array-index-key': 'error',
-    'react/no-danger': 'error',
-    'react/no-danger-with-children': 'error',
-    'react/no-did-mount-set-state': 'error',
-    'react/no-did-update-set-state': 'error',
-    'react/no-multi-comp': ['error', { 'ignoreStateless': true }],
-    'react/no-set-state': 'error',
-    'react/no-string-refs': 'error',
-    'react/no-unescaped-entities': 'error',
-    'react/no-unknown-property': 'error',
-    // This is set to warning as it alerts
-    // false positives.
-    'react/no-unused-prop-types': 'warn',
-    'react/prefer-es6-class': ['error', 'always'],
-    'react/prefer-stateless-function': 'error',
-    'react/self-closing-comp': ['error', {
-      'component': true,
-      'html': true
-    }],
-    'react/style-prop-object': 'error',
-    // End React
-
-    // Start JSX
-    'react/jsx-boolean-value': ['error', 'always'],
-    'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
-    'react/jsx-curly-spacing': ['error', 'never', {'allowMultiline': false}],
-    'react/jsx-equals-spacing': ['error', 'never'],
-    'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
-    'react/jsx-handler-names': ['warn', {
-      'eventHandlerPrefix': 'handle',
-      'eventHandlerPropPrefix': 'on',
-    }],
-    'react/jsx-indent': ['error', 2],
-    'react/jsx-indent-props': ['error', 2],
-    'react/jsx-key': 'error',
-    'react/jsx-max-props-per-line': ['error', { 'maximum': 1 }],
-    'react/jsx-no-bind': ['error', {
-      'ignoreRefs': true,
-      'allowArrowFunctions': false,
-      'allowBind': false
-    }],
-    'react/jsx-no-comment-textnodes': 'error',
-    'react/jsx-no-duplicate-props': 'error',
-    'react/jsx-no-literals': 'error',
-    'react/jsx-no-target-blank': 'error',
-    'react/jsx-no-undef': 'error',
-    'react/jsx-pascal-case': 'error',
-    'react/jsx-space-before-closing': ['error', 'never'],
-    'react/jsx-wrap-multilines': 'error',
-    // End JSX
-
-    // Start FP
-    'fp/no-arguments': 'error',
-    'fp/no-class': 'error',
-    'fp/no-delete': 'error',
-    'fp/no-events': 'error',
-    'fp/no-get-set': 'error',
-    'fp/no-let': 'error',
-    'fp/no-loops': 'error',
-    'fp/no-mutating-assign': 'error',
-    'fp/no-mutating-methods': 'error',
-    'fp/no-mutation': 'error',
-    'fp/no-nil': 'warn',
-    'fp/no-proxy': 'error',
-    'fp/no-this': 'error',
-    // End FP
-    
-    // Start Import
-    'import/no-unresolved': 'error',
-    'import/named': 'error',
-    'import/default': 'error',
-    'import/namespace': 'error',
-    'import/no-absolute-path': 'error',
-    'import/no-dynamic-require': 'warn',
-    'import/export': 'error',
-    'import/no-named-as-default': 'error',
-    'import/no-extraneous-dependencies': 'error',
-    'import/no-mutable-exports': 'error',
-    'import/no-commonjs': 'error',
-    'import/no-amd': 'error',
-    'import/no-nodejs-modules': 'error',
-    'import/first': 'error',
-    'import/no-duplicates': 'error',
-    'import/newline-after-import': 'error',
-    'import/prefer-default-export': 'error',
-    // End Import
-
-    // Start JSX A11Y
-    'jsx-a11y/aria-props': 'error',
-    'jsx-a11y/aria-proptypes': 'error',
-    'jsx-a11y/aria-role': 'error',
-    'jsx-a11y/aria-unsupported-elements': 'error',
-    'jsx-a11y/click-events-have-key-events': 'warn',
-    'jsx-a11y/img-has-alt': 'error',
-    'jsx-a11y/label-has-for': 'warn',
-    'jsx-a11y/mouse-events-have-key-events': 'error',
-    'jsx-a11y/no-access-key': 'error',
-    'jsx-a11y/no-autofocus': 'error',
-    'jsx-a11y/no-redundant-roles': 'error',
-    'jsx-a11y/no-static-element-interactions': 'error',
-    'jsx-a11y/role-has-required-aria-props': 'error',
-    'jsx-a11y/tabindex-no-positive': 'error',
-    // End JSX A11Y
   }
 };

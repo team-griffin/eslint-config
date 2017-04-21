@@ -19,6 +19,7 @@ module.exports = {
   'plugins': [
     'react',
     'flowtype',
+    'import',
     'jsx-a11y',
   ],
   'rules': {
@@ -217,6 +218,26 @@ module.exports = {
     'react/jsx-space-before-closing': ['error', 'never'],
     'react/jsx-wrap-multilines': 'error',
     // End JSX
+
+    // Start Import
+    'import/no-unresolved': 'error',
+    'import/named': 'error',
+    'import/default': 'error',
+    'import/namespace': 'error',
+    'import/no-absolute-path': 'error',
+    'import/no-dynamic-require': 'warn',
+    'import/export': 'error',
+    'import/no-named-as-default': 'error',
+    'import/no-extraneous-dependencies': 'error',
+    'import/no-mutable-exports': 'error',
+    'import/no-commonjs': 'error',
+    'import/no-amd': 'error',
+    'import/no-nodejs-modules': 'error',
+    'import/first': 'error',
+    'import/no-duplicates': 'error',
+    'import/newline-after-import': 'error',
+    'import/prefer-default-export': 'error',
+    // End Import
 
     // Start JSX A11Y
     'jsx-a11y/aria-props': 'error',

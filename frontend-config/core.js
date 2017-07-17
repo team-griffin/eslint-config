@@ -118,7 +118,7 @@ module.exports = {
     'no-underscore-dangle': ['error', { 'allowAfterThis': true }],
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
-    'object-curly-newline': ['error', { 'minProperties': 1, 'consistent': true }],
+    'object-curly-newline': ['error', { 'minProperties': 2, 'consistent': true }],
     'object-property-newline': ['error'],
     'object-curly-spacing': ['error', 'always', { 'arraysInObjects': false }],
     'operator-linebreak': ['error', 'after'],

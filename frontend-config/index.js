@@ -11,7 +11,6 @@ module.exports = {
     'browser': true,
     'es6': true,
   },
-  'installedESLint': true,
   'parserOptions': {
     'ecmaFeatures': {
       'experimentalObjectRestSpread': true,

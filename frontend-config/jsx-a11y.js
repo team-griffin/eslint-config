@@ -11,7 +11,7 @@ module.exports = {
     'jsx-a11y/aria-role': 'error',
     'jsx-a11y/aria-unsupported-elements': 'error',
     'jsx-a11y/click-events-have-key-events': 'warn',
-    'jsx-a11y/img-has-alt': 'error',
+    'jsx-a11y/alt-text': 'error',
     'jsx-a11y/label-has-for': 'warn',
     'jsx-a11y/mouse-events-have-key-events': 'error',
     'jsx-a11y/no-access-key': 'error',

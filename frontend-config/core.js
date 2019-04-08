@@ -98,7 +98,9 @@ module.exports = {
     'keyword-spacing': ['error', { 'before': true }],
     'linebreak-style': ['error', 'unix'],
     'max-len': ['error', {
-      code: 80,
+      code: 100,
+      ignoreComments: true,
+      ignoreTrailingComments: true,
       ignoreTemplateLiterals: true
     }],
     'multiline-ternary': ['error', 'never'],

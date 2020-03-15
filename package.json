@@ -1,6 +1,6 @@
 {
   "name": "@team-griffin/eslint-config",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "main": "index.js",
   "repository": "git@github.com:team-griffin/eslint-config.git",
   "author": "Joshua Thornton <joshua.thornton@heg.com>",
